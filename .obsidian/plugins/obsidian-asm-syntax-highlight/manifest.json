@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-asm-syntax-highlight",
+  "name": "ASM Syntax Highlight",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Syntax highlighting for x86asm code blocks in reading and live preview mode.",
+  "author": "OpenAI",
+  "authorUrl": "https://openai.com",
+  "main": "main.js"
+}

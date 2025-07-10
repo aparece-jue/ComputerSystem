@@ -1,0 +1,8 @@
+.hljs-comment, .hljs-quote { color: #777; font-style: italic; }      /* 注释 */
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-name { color: #007acc; }  /* 关键字 */
+.hljs-attribute, .hljs-meta { color: #f08d49; }                      /* 属性名，宏等 */
+.hljs-number, .hljs-regexp, .hljs-link { color: #d36363; }           /* 数字，正则等 */
+.hljs-string, .hljs-symbol, .hljs-bullet, .hljs-subst { color: #50a14f; } /* 字符串，符号等 */
+.hljs-title, .hljs-section { color: #4078f2; }                       /* 标题、段落（如函数名） */
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: bold; }

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main.ts"],
+  "sourcesContent": ["import { Plugin } from \"obsidian\";\n\nexport default class ASMSyntaxHighlightPlugin extends Plugin {\n  async onload() {\n    console.log(\"[ASM Plugin] \u2705 Plugin loading (Prism highlighting only)...\");\n\n    this.registerMarkdownPostProcessor((el, ctx) => {\n      el.querySelectorAll(\"code.language-x86asm\").forEach((block) => {\n        block.classList.add(\"language-x86asm\");\n        if ((window as any).Prism) {\n          (window as any).Prism.highlightElement(block as HTMLElement);\n        }\n      });\n    });\n  }\n\n  onunload() {\n    console.log(\"[ASM Plugin] \uD83D\uDED1 Plugin unloaded\");\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,sBAAuB;AAEvB,IAAqB,2BAArB,cAAsD,uBAAO;AAAA,EAC3D,MAAM,SAAS;AACb,YAAQ,IAAI,iEAA4D;AAExE,SAAK,8BAA8B,CAAC,IAAI,QAAQ;AAC9C,SAAG,iBAAiB,sBAAsB,EAAE,QAAQ,CAAC,UAAU;AAC7D,cAAM,UAAU,IAAI,iBAAiB;AACrC,YAAK,OAAe,OAAO;AACzB,UAAC,OAAe,MAAM,iBAAiB,KAAoB;AAAA,QAC7D;AAAA,MACF,CAAC;AAAA,IACH,CAAC;AAAA,EACH;AAAA,EAEA,WAAW;AACT,YAAQ,IAAI,wCAAiC;AAAA,EAC/C;AACF;",
+  "names": []
+}

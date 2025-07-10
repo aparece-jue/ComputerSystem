@@ -1,0 +1,17 @@
+{
+  "name": "obsidian-asm-syntax-highlight",
+  "version": "0.1.0",
+  "description": "Obsidian plugin for x86 ASM syntax highlighting",
+  "main": "main.js",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --outfile=main.js --target=es2020 --platform=browser --format=cjs --sourcemap --external:obsidian"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@codemirror/language": "^6.6.0",
+    "@lezer/highlight": "^1.2.0"
+  }
+}
